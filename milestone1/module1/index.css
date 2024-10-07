@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  width: 480px;
+  height: 200px;
+  background-color: red;
+
+  border: 3px solid black;
+  padding: 40px;
+  margin: 10px;
+}
