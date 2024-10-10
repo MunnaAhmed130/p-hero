@@ -4,49 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        background: url(https://images.unsplash.com/photo-1728063976182-3d214a6a3479?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+          no-repeat bottom/cover fixed;
+      }
+
+      .container {
+        background: #59dea9 !important;
+        /* background: #e48b25 !important; */
+        /* color: red; */
+      }
+    </style>
   </head>
   <body>
     <!-- list -->
     <div>
-      <li>orange</li>
-      <li>apple</li>
-      <li>grapes</li>
       <div>
-        <li>fuji</li>
+        <li>orange</li>
+        <li>apple</li>
+        <li>grapes</li>
+        <div>
+          <li>fuji</li>
+        </div>
+        <li>lemon</li>
       </div>
-      <li>lemon</li>
-    </div>
 
-    <!-- unordered list  -->
-    <ul>
-      <li>orange</li>
-      <li>apple</li>
-
+      <!-- unordered list  -->
       <ul>
-        <li>fuji</li>
+        <li>orange</li>
+        <li>apple</li>
 
         <ul>
-          <li>kiku</li>
+          <li>fuji</li>
+
+          <ul>
+            <li>kiku</li>
+          </ul>
         </ul>
+
+        <li>grapes</li>
+        <li>lemon</li>
       </ul>
 
-      <li>grapes</li>
-      <li>lemon</li>
-    </ul>
-
-    <!-- ordered list  -->
-    <ol>
-      <li>orange</li>
-      <li>apple</li>
+      <!-- ordered list  -->
       <ol>
-        <li>fuji</li>
+        <li>orange</li>
+        <li>apple</li>
         <ol>
-          <li>kiku</li>
+          <li>fuji</li>
+          <ol>
+            <li>kiku</li>
+          </ol>
         </ol>
-      </ol>
 
-      <li>grapes</li>
-      <li>lemon</li>
-    </ol>
+        <li>grapes</li>
+        <li>lemon</li>
+      </ol>
+    </div>
+
+    <p>lorem</p>
+
+    <!-- Quotation & citation elements -->
+    <div>
+      <p>Here is a quote from <cite>the walk</cite> :</p>
+      <blockquote cite="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </blockquote>
+
+      <q>Lorem ipsum dolor sit.</q>
+
+      <p>
+        The <abbr title="World Health Organization">WHO</abbr> was founded in
+        1948.
+      </p>
+
+      <address>
+        Written by John Doe.<br />
+        Visit us at:<br />
+        Example.com<br />
+        Box 564, Disneyland<br />
+        USA
+      </address>
+
+      <bdo dir="rtl">This text will be written from right to left</bdo>
+    </div>
+
+    <!-- comments -->
+    <div>
+      <!-- This is a comment -->
+      <!-- <p>This is another paragraph </p> -->
+      <p>
+        This
+        <!-- great text -->
+        is a paragraph.
+      </p>
+    </div>
+
+    <!--  -->
+    <div>
+      <a href="https://www.w3schools.">unvisited link</a>
+      <a href="https://www.w3schools.com/" target="_blank">visited link</a>
+      <a href="https://www.w3schools.com/" target="_self">visited link</a>
+      <a href="https://www.w3schools.com/" target="_parent">visited link</a>
+      <a href="https://www.w3schools.com/" target="_top">visited link</a>
+      <!-- without text anchor link is not visible -->
+      <a href="https://www.w3schools.com/" target="_top"></a>
+    </div>
+
+    <div class="container">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+        dignissimos sint minus aliquid porro accusamus aspernatur molestiae.
+        Libero, consequatur iure.
+      </p>
+      <div class="child"></div>
+    </div>
+
+    <!-- <iframe src="https://www.w3schools.com/html" frameborder="0"></iframe> -->
   </body>
 </html>
