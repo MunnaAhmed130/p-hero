@@ -1,0 +1,36 @@
+/* parent */
+.parent {
+  display: flex;
+  border: 2px solid black;
+}
+
+/* box models */
+.standard-box,
+.alt-box,
+.alt-box2 {
+  background-color: greenyellow;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3rem;
+  margin: 1rem;
+  border: 2px solid black;
+}
+
+.standard-box,
+.alt-box {
+  width: 350px;
+  height: 150px;
+}
+
+.alt-box,
+.alt-box2 {
+  box-sizing: border-box;
+  /* margin-top: -10px; */
+}
+
+.alt-box2 {
+  width: 450px;
+  height: 250px;
+}
