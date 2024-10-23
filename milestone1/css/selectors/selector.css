@@ -2,3 +2,25 @@ p::first-letter {
   font-size: 2rem;
   color: blue;
 }
+
+p {
+  color: rgb(82, 239, 132);
+}
+
+p {
+  color: green;
+}
+
+.para {
+  color: black;
+}
+
+#special {
+  color: black;
+}
+
+.parent {
+  font-size: 2rem;
+  color: yellowgreen;
+  background-color: rgb(107, 107, 107);
+}

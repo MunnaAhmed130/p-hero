@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="selector.css" />
+    <style>
+      p {
+        color: red;
+      }
+
+      #special {
+        color: black;
+      }
+
+      .para {
+        color: black;
+      }
+    </style>
   </head>
   <body>
-    <p>
+    <!-- check selectors, specificty, cascade and inheritance -->
+
+    <p id="special" class="para" style="color: blueviolet">
+      <!-- <p class="para" id="special"> -->
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
       nulla quasi. Harum praesentium sapiente ab laboriosam eum id doloremque
       eius.
     </p>
+
+    <!-- inheritance  -->
+    <div class="parent">
+      <div class="child1">Lorem ipsum dolor sit amet.</div>
+      <div class="child2">Lorem ipsum dolor sit amet.</div>
+      <div class="child3">
+        <p>Lorem ipsum <span>dolor</span> sit amet.</p>
+      </div>
+    </div>
   </body>
 </html>
