@@ -24,3 +24,14 @@ p {
   color: yellowgreen;
   background-color: rgb(107, 107, 107);
 }
+
+.child2 {
+  /* the value is already inherited */
+  color: unset;
+}
+
+button {
+  background-color: inherit;
+  /* all: unset; */
+  /* background-color: revert; */
+}

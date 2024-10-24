@@ -1,7 +1,27 @@
-body,
+/* initial  */
+
+/* body,
 h1,
 p,
 ul,
 li {
   all: initial;
+} */
+
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+button {
+  all: unset;
+}
+
+/* revert */
+ul {
+  color: red;
+}
+
+li {
+  /* display: revert; */
+  color: unset;
 }
