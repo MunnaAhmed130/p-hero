@@ -10,18 +10,33 @@ li {
 
 body {
   font-family: Tahoma, sans-serif;
+  color: blue;
 }
 
 button {
-  all: unset;
+  /* color: revert; */
+  /* color: inherit; */
+  /* background-color: initial; */
+  /* border: revert; */
+  /* color: unset; */
 }
 
 /* revert */
 ul {
   color: red;
+  /* color: revert; */
 }
 
 li {
   /* display: revert; */
+
+  /* for inherited properties revert and unset are the same  */
+  color: revert;
+
+  /* for non-inherited properties 
+   revert- reverts to UA stylesheets
+   unset - reverts to initial
+  */
+
   color: unset;
 }
