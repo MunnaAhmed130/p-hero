@@ -1,6 +1,7 @@
 /*
 they don't create layers 
 and behave as if they are part of the imported stylesheet
+but are not permormant as
 */
 
 @import "../reset.css";

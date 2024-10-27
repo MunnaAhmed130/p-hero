@@ -4,7 +4,7 @@ header {
   ul {
     display: none;
   }
-  button {
-    display: inline-block;
-  }
+}
+button {
+  display: inline-block;
 }
