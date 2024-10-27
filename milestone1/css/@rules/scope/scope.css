@@ -1,0 +1,13 @@
+@scope (section) {
+  p {
+    color: red;
+  }
+}
+
+p {
+  color: blue;
+}
+
+section p {
+  color: black;
+}
