@@ -1,0 +1,65 @@
+/* declaration order matters */
+@layer base, next, module;
+
+/* 
+so you would think that important in module will over imortant in next
+but that doesn't happen   
+when using important the lowest specificity layer, base will always win 
+using important targeting the same element the first layer will have the highest precedent
+ */
+
+@layer base {
+  p {
+    color: hotpink !important;
+  }
+  button {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: greenyellow;
+    border: none;
+  }
+}
+
+/* p {
+  color: black !important;
+} */
+
+@layer module {
+  div {
+    p {
+      color: red !important;
+    }
+  }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+  }
+
+  button {
+    /* border: revert-layer; */
+    /* background-color: revert-layer; */
+  }
+}
+
+/* anonymous layer */
+@layer next {
+  p {
+    color: blue !important;
+  }
+  h1 {
+    color: black;
+  }
+}
+
+/* 
+layered styles has less specificity than unlayered styles.
+unlayered styles will always override named and anonymous layers.
+ */
+
+/* p {
+  color: green !important;
+} */
+
+button {
+  background-color: revert-layer;
+}
