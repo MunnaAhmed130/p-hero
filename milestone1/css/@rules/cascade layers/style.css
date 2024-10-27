@@ -9,8 +9,11 @@ using important targeting the same element the first layer will have the highest
  */
 
 @layer base {
-  p {
-    color: hotpink !important;
+  div {
+    p {
+      /* color: hotpink !important; */
+      color: hotpink;
+    }
   }
   button {
     padding: 1rem;
@@ -27,9 +30,14 @@ using important targeting the same element the first layer will have the highest
 @layer module {
   div {
     p {
-      color: red !important;
+      color: black;
     }
   }
+
+  /* p {
+    color: hotpink;
+  } */
+
   h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: green;
@@ -41,23 +49,39 @@ using important targeting the same element the first layer will have the highest
   }
 }
 
-/* anonymous layer */
-@layer next {
+@layer {
   p {
-    color: blue !important;
-  }
-  h1 {
-    color: black;
+    color: red;
   }
 }
 
+/*  */
+@layer next {
+  p {
+    color: blue;
+  }
+  div {
+    h1 {
+      color: black;
+    }
+  }
+}
+
+/* anonymous layers has more precedence than named layers */
+
+/* @layer {
+  p {
+    color: green;
+  }
+} */
+
 /* 
-layered styles has less specificity than unlayered styles.
+layered styles has less precedence than unlayered styles.
 unlayered styles will always override named and anonymous layers.
- */
+*/
 
 /* p {
-  color: green !important;
+  color: magenta;
 } */
 
 button {
