@@ -17,6 +17,8 @@ button {
   /* color: revert; */
   /* color: inherit; */
   /* background-color: initial; */
+  /* background-color: revert-layer; */
+  width: revert;
   /* border: revert; */
   /* color: unset; */
 }
