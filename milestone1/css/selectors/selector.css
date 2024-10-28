@@ -35,3 +35,7 @@ button {
   /* all: unset; */
   /* background-color: revert; */
 }
+
+button:hover {
+  color: white;
+}
