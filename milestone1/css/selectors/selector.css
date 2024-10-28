@@ -39,3 +39,17 @@ button {
 button:hover {
   color: white;
 }
+
+/* combinator doesn't add to specificity */
+
+/* div ~ p {
+  color: blue;
+} */
+
+div p {
+  color: black;
+}
+
+div > p {
+  color: red;
+}
