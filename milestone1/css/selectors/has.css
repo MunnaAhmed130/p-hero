@@ -1,0 +1,8 @@
+.card:has(p) {
+  /* width: 50%; */
+  color: red;
+}
+
+/* .card {
+  color: blue;
+} */

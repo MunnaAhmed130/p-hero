@@ -1,0 +1,16 @@
+p :is(a, em, .part) {
+  color: green;
+}
+
+/* p: , .parent {
+  color: red;
+} */
+
+:is(p, .parent) {
+  color: red;
+}
+
+/* pseudo class */
+a:is(:hover, :focus) {
+  color: black;
+}
