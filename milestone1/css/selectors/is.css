@@ -1,4 +1,4 @@
-p :is(a, em, .part) {
+p :is(a, em, .part, #mort) {
   color: green;
 }
 
