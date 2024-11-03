@@ -1,0 +1,123 @@
+.container,
+.linear-container {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 1rem;
+}
+
+.box {
+  --box: 200px;
+  width: var(--box);
+  height: var(--box);
+}
+
+.linear-basic {
+  background-image: linear-gradient(to left top, red, yellow);
+
+  /* =================== */
+  /* color angles */
+  /* =================== */
+  /* 360 or 0 deg = bottom to top */
+  /*  180 deg = top to bottom */
+  /* background-image: linear-gradient(180deg, red, yellow); */
+
+  /* =================== */
+  /* starting position and color stops */
+  /* =================== */
+  /* background-image: linear-gradient(red, yellow 50px); */
+  /* turning green is at 40% of the height */
+  /* background-image: linear-gradient(0deg, blue, 10px, green 40%, red); */
+
+  /* =================== */
+  /* turns */
+  /* =================== */
+  /* background: linear-gradient(0.5turn, red, yellow); */
+  /* background-image: linear-gradient(0.5turn, red, 10%, blue); */
+  /* background-image: linear-gradient(0turn, red, blue); */
+  /* background-image: linear-gradient(0.125turn, red 50%, blue 50%); */
+
+  /* =================== */
+  /* Multi-position color stop */
+  /* =================== */
+  /* background: linear-gradient(45deg, red 0 50%, blue 50% 100%); */
+  /* background-image: linear-gradient(red 40%, yellow 30%, blue 65%); */
+
+  /* background-image: linear-gradient(
+    red 0%,
+    orange 10%,
+    orange 30%,
+    yellow 50%,
+    yellow 70%,
+    green 90%,
+    green 100%
+  ); */
+
+  /* background-image: linear-gradient(
+    red,
+    orange 10% 30%,
+    yellow 50% 70%,
+    green 90%
+  ); */
+
+  /* background-image: linear-gradient(
+     red 0%, 
+      orange 10% 30%,
+    yellow 50% 70%,
+    green 90% 100%
+  );
+  */
+}
+
+/* ====================== */
+/*  color interpolation  */
+/* ====================== */
+
+.linear-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+
+.linear-container > * {
+  width: 90%;
+  height: 100px;
+}
+
+/* 
+.linear1 {
+  background-image: linear-gradient(in srgb, red, blue);
+
+  background-image: linear-gradient(red, blue);
+}
+
+.linear2 {
+  background-image: linear-gradient(in oklab, red, blue);
+}
+
+.linear3 {
+  background-image: linear-gradient(in hsl, red, blue);
+} */
+
+/* ====================== */
+/*  hue interpolation  */
+/* ====================== */
+
+.linear1 {
+  /* background-image: linear-gradient(90deg in srgb, red, blue); */
+
+  background: linear-gradient(in hsl longer hue, red, blue);
+
+  background: linear-gradient(in hsl shorter hue, red, blue);
+
+  /* background-image: linear-gradient(red, blue); */
+}
+
+.linear2 {
+  background-image: linear-gradient(in oklab hue, red, blue);
+}
+
+.linear3 {
+  background-image: linear-gradient(in hsl longer hue, red, blue);
+}
