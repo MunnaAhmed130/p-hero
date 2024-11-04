@@ -12,7 +12,13 @@
 }
 
 .linear-basic {
-  background-image: linear-gradient(to left top, red, yellow);
+  /* background-image: linear-gradient(to left top, red, yellow); */
+
+  /* multple gradient on a single background */
+  background-image: linear-gradient(to top left, red, transparent 90%),
+    linear-gradient(to left, blue, transparent),
+    linear-gradient(to bottom right, cyan, transparent),
+    linear-gradient(to top right, black, transparent);
 
   /* =================== */
   /* color angles */
@@ -69,20 +75,21 @@
 }
 
 /* ====================== */
-/*  color interpolation  */
+/*  color interpolation with color space  */
 /* ====================== */
 
 .linear-container {
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin-block: 1rem;
 }
 
 .linear-container > * {
   width: 90%;
   height: 100px;
+  margin: 1rem;
 }
 
 /* 
@@ -109,15 +116,119 @@
 
   background: linear-gradient(in hsl longer hue, red, blue);
 
-  background: linear-gradient(in hsl shorter hue, red, blue);
+  background: linear-gradient(to right in hsl shorter hue, red, blue);
 
   /* background-image: linear-gradient(red, blue); */
 }
 
 .linear2 {
-  background-image: linear-gradient(in oklab hue, red, blue);
+  background-image: linear-gradient(to right in hsl longer hue, red, blue);
+}
+
+/* ====================== */
+/*  repeating linear gradient  */
+/* ====================== */
+
+.linear-repeat {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.linear-repeat > * {
+  width: 300px;
+  height: 200px;
+  margin: 1rem;
 }
 
 .linear3 {
-  background-image: linear-gradient(in hsl longer hue, red, blue);
+  /* border: 5px solid black; */
+
+  /* brick wall */
+  background: repeating-linear-gradient(
+    180deg,
+    #e66465,
+    #e66465 20px,
+    #000000 20px,
+    #ffffff 25px
+  );
+
+  background-image: repeating-linear-gradient(
+    to top right,
+    red 10px 20px,
+    white 60px
+  );
+}
+
+.linear4 {
+  /* background: repeating-linear-gradient(); */
+
+  background: repeating-linear-gradient(
+    45deg,
+    #3f87a6,
+    #ebf8e1 15%,
+    #f69d3c 20%
+  );
+
+  /* background: linear-gradient(45deg, #3f87a6, #ebf8e1 15%, #f69d3c 20%); */
+}
+
+/* multiple gradient  */
+.linear5 {
+  background: repeating-linear-gradient(
+      to top right,
+      transparent 0px 12%,
+      #000000 25%
+    ),
+    repeating-linear-gradient(0.25turn, transparent 0px 15%, #ffffff 25%),
+    linear-gradient(to top left, red, transparent 90%),
+    linear-gradient(to left, blue, transparent),
+    linear-gradient(to bottom right, cyan, transparent),
+    linear-gradient(to top right, black, transparent);
+}
+
+.linear6 {
+  background: repeating-linear-gradient(
+      to bottom right,
+      transparent 0px 20%,
+      #000000 25%
+    ),
+    repeating-linear-gradient(0.25turn, transparent 0px 20%, #ffffff 25%),
+    linear-gradient(to top left, rgb(218, 44, 44), transparent 90%),
+    linear-gradient(to left, blue, transparent),
+    linear-gradient(to bottom right, cyan, transparent),
+    linear-gradient(to top right, rgb(168, 24, 220), transparent);
+}
+
+/* practise  */
+
+.linear7 {
+  /* border: transparent transparent transparent ; */
+  /* border: 5px solid black; */
+  border-radius: 10px;
+  background: linear-gradient(
+      to bottom right,
+      rgb(0, 0, 0) 0px 24%,
+      black 24% 25%,
+      transparent 25%
+    ),
+    linear-gradient(
+      230deg,
+      rgb(0, 0, 0) 0px 24%,
+      black 24% 25%,
+      transparent 25%
+    ),
+    repeating-linear-gradient(
+      to bottom right,
+      transparent 0px 10px,
+      rgb(255, 149, 0, 50%) 10px 20px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent 0px 10px,
+      rgb(255, 145, 0, 50%) 10px 20px
+    ),
+    linear-gradient(black, black);
+  /* clip-path: polygon(0% 100%, 50% 0%, 100% 100%); */
+  /* background-size: 100px; */
+  /* background-position: 100px; */
 }
