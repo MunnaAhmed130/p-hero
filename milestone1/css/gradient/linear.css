@@ -1,24 +1,12 @@
-.container,
-.linear-container {
-  display: flex;
-  justify-content: space-around;
-  margin-block: 1rem;
-}
-
-.box {
-  --box: 200px;
-  width: var(--box);
-  height: var(--box);
-}
-
 .linear-basic {
-  /* background-image: linear-gradient(to left top, red, yellow); */
-
   /* multple gradient on a single background */
-  background-image: linear-gradient(to top left, red, transparent 90%),
+
+  /* background-image: linear-gradient(to top left, red, transparent 90%),
     linear-gradient(to left, blue, transparent),
     linear-gradient(to bottom right, cyan, transparent),
-    linear-gradient(to top right, black, transparent);
+    linear-gradient(to top right, black, transparent); */
+
+  background: linear-gradient(to right, red, 1rem, yellow);
 
   /* =================== */
   /* color angles */
@@ -74,23 +62,29 @@
   */
 }
 
+.linear-basic1 {
+  /* color stops can be negative */
+  background-image: linear-gradient(
+    to left top,
+    red -20%,
+    yellow 80%,
+    green 150%
+  );
+
+  /* out of order color stop  */
+
+  /* background-image: linear-gradient(
+    80deg,
+    red 30%,
+    green 20%,
+    yellow 60%,
+    blue 40%
+  ); */
+}
+
 /* ====================== */
 /*  color interpolation with color space  */
 /* ====================== */
-
-.linear-container {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  /* flex-direction: column; */
-  margin-block: 1rem;
-}
-
-.linear-container > * {
-  width: 90%;
-  height: 100px;
-  margin: 1rem;
-}
 
 /* 
 .linear1 {
@@ -128,17 +122,6 @@
 /* ====================== */
 /*  repeating linear gradient  */
 /* ====================== */
-
-.linear-repeat {
-  display: flex;
-  /* flex-direction: column; */
-}
-
-.linear-repeat > * {
-  width: 300px;
-  height: 200px;
-  margin: 1rem;
-}
 
 .linear3 {
   /* border: 5px solid black; */
