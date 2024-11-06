@@ -1,0 +1,78 @@
+.radial1 {
+  /* height: 400px; */
+  /* 3 color stops */
+  /* background-image: radial-gradient(yellow, red, yellow); */
+
+  /* 2 color stops */
+  /* background-image: radial-gradient(red, yellow); */
+
+  /*  understanding radial size keywords  */
+  background-image: radial-gradient(farthest-side at 50px 50px, red, yellow);
+
+  /* background-image: radial-gradient(circle farthest-side at right, #00f, #fff); */
+
+  /* background-image: radial-gradient(circle farthest-side, #00f, #fff); */
+
+  /* background: radial-gradient(#e66465, #9198e5); */
+  /* black 20px */
+}
+
+.radial2 {
+  /* background: radial-gradient(5rem circle at top left, #e66465, #9198e5); */
+
+  /*  multiple gradient stack */
+
+  /* background: radial-gradient(circle at top, #e66465 20%, transparent 35%),
+    radial-gradient(circle at left, #e66465 20%, transparent 40%),
+    radial-gradient(circle at right, #e66465 20%, transparent 40%),
+    radial-gradient(circle at bottom, #e66465 20%, transparent 40%),
+    radial-gradient(circle at center, #e66465 20%, #9198e5 20%); */
+
+  /* radial-gradient(circle at center, #e66465 20%, #9198e5 20%); */
+
+  /* radial-gradient(radial-shape? radial-size? at position?) */
+
+  background: radial-gradient(circle 6rem 1rem at center, #e66465, #9198e5);
+}
+
+.radial3 {
+  /* multiple gradient */
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+    radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+
+.radial4 {
+  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.radial5 {
+  background: radial-gradient(
+    circle at 100%,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  );
+}
+
+.radial6 {
+  background-image: repeating-radial-gradient(
+    black,
+    black 20px,
+    white 30px,
+    black 40px
+  );
+}
+
+.radial7 {
+  /* percentage  */
+  background-image: radial-gradient(
+      circle,
+      red 10%,
+      black 10% 12%,
+      transparent 12%
+    ),
+    radial-gradient(blue 10%, black 10% 12%, transparent 12%);
+
+  background-position: 0, 20px 20px;
+}
