@@ -1,0 +1,21 @@
+/* notebook styles */
+
+.notebook {
+  position: relative;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: floralwhite;
+}
+
+.notebook::before {
+  content: "";
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  position: absolute;
+  background-image: repeating-linear-gradient(
+    to top,
+    rgb(107, 181, 233) 0 3px,
+    transparent 0 1lh
+  );
+}
