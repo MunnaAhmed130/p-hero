@@ -1,11 +1,29 @@
 /* conic gradient  */
-.conic {
+.conic1 {
   /* background-color: red; */
+  /* border-radius: 50%; */
 
-  border-radius: 50%;
-  /* background-image: conic-gradient(#f69d3c, #3f87a6, #f69d3c); */
+  /* background-image: conic-gradient(pink, coral, pink); */
+  background-image: conic-gradient(green, lightgreen, green);
+}
 
-  /* background-image: conic-gradient(
+.conic2 {
+  background-image: conic-gradient(
+    from 90deg at 10px 100%,
+    #f69d3c,
+    #3f87a6,
+    #f69d3c
+  );
+}
+
+.conic3 {
+  /* understanding gradients and percentage */
+  background: conic-gradient(red 40grad, 80grad, blue 360grad);
+  /* background: conic-gradient(red 10%, 20%, blue 90%); */
+}
+
+.conic4 {
+  background-image: conic-gradient(
     #f00,
     #ff7f00 30deg,
     #ff0 60deg,
@@ -19,8 +37,52 @@
     #f0f 300deg,
     #ff007f 330deg,
     #f00 360deg
+  );
+}
+
+.conic5 {
+  /* turns and percentages */
+
+  background: conic-gradient(
+    #fff 0turn 0.09turn,
+    #bbb 0.09turn 0.27turn,
+    #666 0.27turn 0.54turn,
+    #000 0.54turn 1turn
+  );
+
+  /* background: conic-gradient(
+    #fff 0% 9%,
+    #bbb 9% 27%,
+    #666 27% 54%,
+    #000 54% 100%
   ); */
 
-  /* background-image: conic-gradient(pink, coral, pink); */
-  background-image: conic-gradient(green, lightgreen, green);
+  /*  */
+}
+
+.conic6 {
+  --first: #ffffff;
+  --second: #d84141;
+  /* background: conic-gradient(red 0.8rad, yellow 0.6rad, blue 1.3rad); */
+
+  background: conic-gradient(
+    var(--first) 0 90deg,
+    var(--second) 90deg 180deg,
+    var(--first) 180deg 270deg,
+    var(--second) 300grad
+  );
+  background-size: 25% 25%;
+}
+
+.conic7 {
+  background: repeating-conic-gradient(#000 0deg 60deg, #fff 60deg 90deg);
+}
+
+.conic8 {
+  background: repeating-conic-gradient(
+    from 45deg at 0% 0%,
+    brown 0deg 10deg,
+    darkgoldenrod 10deg 20deg,
+    rgba(210, 105, 30, 0) 20deg 30deg
+  );
 }

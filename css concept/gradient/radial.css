@@ -7,7 +7,7 @@
   /* background-image: radial-gradient(red, yellow); */
 
   /*  understanding radial size keywords  */
-  background-image: radial-gradient(farthest-side at 50px 50px, red, yellow);
+  background-image: radial-gradient(farthest-corner at 50px 50px, red, yellow);
 
   /* background-image: radial-gradient(circle farthest-side at right, #00f, #fff); */
 
@@ -30,9 +30,8 @@
 
   /* radial-gradient(circle at center, #e66465 20%, #9198e5 20%); */
 
-  /* radial-gradient(radial-shape? radial-size? at position?) */
-
-  background: radial-gradient(circle 6rem 1rem at center, #e66465, #9198e5);
+  /* radial-gradient(radial-shape? radial-size? at position? color-stop-list) */
+  background: radial-gradient(ellipse 2rem 2rem at center, #e66465, #9198e5);
 }
 
 .radial3 {
@@ -42,25 +41,34 @@
 }
 
 .radial4 {
-  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
-}
-
-.radial5 {
   background: radial-gradient(
-    circle at 100%,
-    #333,
-    #333 50%,
-    #eee 75%,
-    #333 75%
+    circle,
+    #3f87a6 8%,
+    #ebf8e1 10%,
+    15%,
+    #f69d3c 100%
   );
 }
 
+/* color interpolation in radial gradient */
+.radial5 {
+  background: radial-gradient(
+    /* circle at 100%, */ circle at left 0px top -300% in hsl longer hue,
+    #333,
+    #3192d7 60%,
+    #e15b5b 75%,
+    #ffffff 75%
+  );
+}
+
+/* repeating-radial-gradient */
 .radial6 {
   background-image: repeating-radial-gradient(
-    black,
-    black 20px,
-    white 30px,
-    black 40px
+    circle at 100% in hsl shorter hue,
+    white 5%,
+    rgb(246, 72, 72) 10%,
+    rgb(94, 176, 244) 20%,
+    black 22%
   );
 }
 
