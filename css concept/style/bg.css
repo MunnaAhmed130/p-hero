@@ -1,0 +1,134 @@
+body {
+  /* background: url("https://i.ibb.co.com/6JPyyw9/black-wall-bg.jpg") center; */
+
+  /* background: red url("https://i.ibb.co.com/6JPyyw9/black-wall-bg.jpg"); */
+
+  /* background-image: url("https://i.ibb.co.com/6JPyyw9/black-wall-bg.jpg"); */
+  /* background-color: red; */
+
+  /* color: white; */
+}
+
+.container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #89bce9;
+
+  /* background: url("https://i.ibb.co.com/6JPyyw9/black-wall-bg.jpg") left; */
+}
+
+h2 {
+  /* background-color: black; */
+  /* color: white; */
+}
+
+span {
+  background-color: rgb(255 255 255 / 40%);
+}
+
+.box {
+  --box: 200px;
+  width: var(--box);
+  height: var(--box);
+
+  margin: 1rem;
+
+  /* background-color: red; */
+  /* background-color: rgb(255, 0, 0, 0.5); */
+  background-color: hsl(200, 100%, 50%);
+}
+
+.stars {
+  background-image: url(https://mdn.github.io/shared-assets/images/examples/star.png);
+  /* background-repeat: space; */
+  /* background-repeat: repeat-x ; */
+}
+
+.balloon {
+  --box: 500px;
+
+  background-image: url(https://mdn.github.io/shared-assets/images/examples/balloons.jpg);
+
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+/* bonus */
+.balloon-star {
+  background-image: url(https://mdn.github.io/shared-assets/images/examples/star.png),
+    url(https://mdn.github.io/shared-assets/images/examples/balloons.jpg);
+  background-size: auto, 200px;
+
+  /* background-size: 200px 100px; */
+
+  /* background-position: top 20px right 10%; */
+
+  background-position-x: right, left;
+  background-position-y: center, top;
+
+  background-repeat: space, no-repeat;
+
+  width: 600px;
+  /* padding: 10rem; */
+}
+
+/* background size keywords  */
+.bg-size {
+  /* keyword */
+  background-size: auto;
+  background-size: contain;
+  background-size: cover;
+
+  /* length and percentage - width heigth */
+  /* percentage based on box size */
+  background-size: 200px 100px;
+  background-size: 50% 50%;
+
+  background-size: 100px 50%; /* can be a mix of length and percentage */
+}
+
+/* background repeat keywords */
+.bg-repeat {
+  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: space;
+  background-repeat: round;
+}
+
+/* understanding background position */
+.bg-position {
+  /* background-position: right 10px top 20px; */
+  /* background-position: -100px bottom; */
+  /* background-position: 200px 100px; */
+
+  /* for keywords - x , y axis or vice versa */
+  background-position: top center;
+
+  /* length and percentages - x , y axis */
+  background-position: 100px 150px;
+  background-position: -50% -50%;
+  background-position: 50% 100px;
+
+  background-position: 100px bottom;
+
+  /* 4 value syntax for distancing for certain edges */
+  background-position: top 20px right 10px;
+
+  /* they are the same */
+  background-position: right center;
+  background-position: right;
+
+  /* they are the same */
+  background-position: left center;
+  background-position: left;
+
+  /* they are the same */
+  /* center on x and y axis */
+  background-position: center center;
+  background-position: center;
+  background-position: 50%;
+}

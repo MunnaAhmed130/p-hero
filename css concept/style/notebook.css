@@ -1,0 +1,43 @@
+/* notebook styles */
+
+.notebook {
+  --m-block: 1rem;
+  --p-block: 10rem;
+  --m-sum: calc(calc(var(--m-block) * 2) + calc(var(--p-block) * 2));
+
+  height: 100vh;
+  height: calc(100vh - (var(--m-block) * 2));
+
+  position: relative;
+  font-size: 2rem;
+  margin: var(--m-block);
+  padding: var(--p-block);
+  background-color: floralwhite;
+  overflow: visible;
+}
+
+.notebook::before {
+  content: "";
+  width: calc(100% - (var(--p-block) * 2));
+  /* (var(--m-block) * 2) */
+  /* min-height: calc(100% - (var(--p-block) * 2)); */
+  height: calc(100% - var(--m-sum));
+  /* height: 100%; */
+  position: absolute;
+
+  background-image: repeating-linear-gradient(
+    to top,
+    blue 0 2px,
+    transparent 0 1lh
+  );
+
+  /* background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 calc(1lh - 2px),
+    rgb(107, 181, 233) 0 1lh
+  ); */
+
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  /* z-index: 5; */
+}

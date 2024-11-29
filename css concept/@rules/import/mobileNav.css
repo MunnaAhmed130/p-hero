@@ -1,0 +1,10 @@
+header {
+  padding-inline: 1rem;
+
+  ul {
+    display: none;
+  }
+}
+button {
+  display: inline-block;
+}

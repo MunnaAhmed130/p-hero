@@ -1,0 +1,4 @@
+/* specificity score - 001 + 010(.special) = 011 */
+p:not(.special) {
+  color: red;
+}

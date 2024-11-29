@@ -1,0 +1,31 @@
+@layer base, utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  p {
+    padding: 1rem;
+  }
+  @layer a {
+    p {
+      padding: 2rem;
+    }
+  }
+
+  p {
+    /* padding: 2rem; */
+    background-color: hotpink;
+    color: black;
+  }
+  @layer {
+    p {
+      background-color: green;
+      color: white;
+    }
+  }
+}

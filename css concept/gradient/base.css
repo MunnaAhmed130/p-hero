@@ -1,0 +1,39 @@
+.box {
+  --box: 200px;
+  width: var(--box);
+  height: var(--box);
+}
+
+/* linear  */
+
+.container,
+.linear-container,
+.linear-repeat,
+.radial-container {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.linear-container > * {
+  /* width: 50%; */
+  /* width: max(50%, 200px); */
+  width: calc(50% - 0.5rem);
+  min-width: 200px;
+  height: 100px;
+  /* margin: 1rem; */
+}
+
+.linear-repeat > * {
+  width: 300px;
+  height: 200px;
+}
+
+/* radial */
+.radial-container * {
+  /* width: 500px; */
+  width: calc(50% - 0.5rem);
+  height: 200px;
+}

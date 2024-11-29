@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- you can just link multiple external css file like this  -->
+
+    <!-- <link rel="stylesheet" href="/milestone1/css/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="nav.css" /> -->
+    <!-- <link rel="stylesheet" href="mobileNav.css" /> -->
+  </head>
+  <body>
+    <header>
+      <h1>Import</h1>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Explore</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <button class="btn" onclick="show()">open</button>
+      </nav>
+    </header>
+
+    <script>
+      function show() {
+        const btn = document.getElementsByClassName("btn");
+        console.log(btn);
+        btn[0].style.display = "none";
+        const ul = document.getElementsByTagName("ul");
+        ul[0].style.display = "inline-block";
+        return;
+      }
+    </script>
+  </body>
+</html>

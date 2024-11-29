@@ -1,0 +1,26 @@
+/* conic gradient  */
+.conic {
+  /* background-color: red; */
+
+  border-radius: 50%;
+  /* background-image: conic-gradient(#f69d3c, #3f87a6, #f69d3c); */
+
+  /* background-image: conic-gradient(
+    #f00,
+    #ff7f00 30deg,
+    #ff0 60deg,
+    #7fff00 90deg,
+    #0f0 120deg,
+    #00ff7f 150deg,
+    #0ff 180deg,
+    #007fff 210deg,
+    #00f 240deg,
+    #7f00ff 270deg,
+    #f0f 300deg,
+    #ff007f 330deg,
+    #f00 360deg
+  ); */
+
+  /* background-image: conic-gradient(pink, coral, pink); */
+  background-image: conic-gradient(green, lightgreen, green);
+}

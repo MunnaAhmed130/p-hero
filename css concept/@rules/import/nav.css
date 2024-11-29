@@ -1,0 +1,29 @@
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  line-height: 2rem;
+  background-color: rgb(35, 35, 35);
+
+  h1,
+  ul,
+  li,
+  a {
+    display: inline-block;
+    margin: initial;
+  }
+
+  a {
+    color: inherit;
+    padding-inline: 1rem;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  button {
+    display: none;
+  }
+}
